@@ -1,4 +1,4 @@
-# E2E Test Assessment for QA Automation Engineer
+# SauceDemo E2E Tests
 
 ## Project Overview
 
@@ -32,13 +32,9 @@ This project includes end-to-end (E2E) tests for the Sauce Labs demo app using P
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 12 or higher)
+- [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
-
-### Clone the project
-
--[Github]()
 
 ### Running the Tests
 
-npx playwright test
+- npx playwright test
