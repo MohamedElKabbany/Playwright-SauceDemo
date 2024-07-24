@@ -4,7 +4,7 @@ const CartPage = require('../pages/CartPage');
 
 test.describe('Visual Regression Testing', () => {
 
-  test('Capture screenshots of key pages', async ({ page }) => {
+  test('Capture screenshots of key pages @visual', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await expect(page).toHaveScreenshot();
