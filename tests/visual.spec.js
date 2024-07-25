@@ -8,13 +8,16 @@ test.describe('Visual Regression Testing', () => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await expect(page).toHaveScreenshot();
+    //expect(await page.screenshot()).toMatchSnapshot('loginPage.png');
     
     await loginPage.login('standard_user', 'secret_sauce');
     await expect(page).toHaveScreenshot();
+    //expect(await page.screenshot()).toMatchSnapshot('productPage.png');
 
     const cartPage = new CartPage(page);
     await cartPage.addToCart();
     await cartPage.goToCart();
     await expect(page).toHaveScreenshot();
+    //expect(await page.screenshot()).toMatchSnapshot('cartPage.png');
   });
 });

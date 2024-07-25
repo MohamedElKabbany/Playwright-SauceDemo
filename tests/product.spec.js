@@ -35,7 +35,7 @@ test.describe('Product Tests', () => {
     const productPage = new ProductPage(page);
     await productPage.sortBy('hilo');
     const productPrices = await productPage.getProductPrices();
-    const sortedPrices = [...productPrices].sort((a, b) => (b - a));
+    const sortedPrices = [...productPrices].sort((a, b) => parseFloat(b.slice(1)) - parseFloat(a.slice(1)));
     expect(productPrices).toEqual(sortedPrices);
   });
 });
