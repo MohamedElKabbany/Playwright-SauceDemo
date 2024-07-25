@@ -32,8 +32,9 @@ This project includes end-to-end (E2E) tests for the Sauce Labs demo app using P
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
+- Install [Node.js](https://nodejs.org/)
+- Install [npm](https://www.npmjs.com/)
+- Clone the Repo [Github](https://github.com/MohamedElKabbany/playwright-saucedemo)
 
 ### Running the Tests
 
